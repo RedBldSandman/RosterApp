@@ -32,6 +32,7 @@
   <ItemGroup>
     <Compile Include="app.js" />
     <Compile Include="public\js\app.js" />
+    <Compile Include="public\js\controllers.js" />
     <Compile Include="public\js\services.js" />
     <Compile Include="node_modules\angular-resource\angular-resource.js" />
     <Compile Include="node_modules\angular-resource\angular-resource.min.js" />
