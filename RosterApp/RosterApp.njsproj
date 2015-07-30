@@ -173,9 +173,10 @@
     <Content Include="node_modules\bootstrap\package.json" />
     <Content Include="node_modules\bootstrap\README.md" />
     <Content Include="package.json" />
-    <Content Include="partials\home.html" />
+    <Content Include="views\partials\home.html" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
+    <Content Include="views\error.html" />
     <Content Include="views\index.html" />
   </ItemGroup>
   <ItemGroup>
@@ -194,7 +195,7 @@
     <Folder Include="node_modules\bootstrap\js\" />
     <Folder Include="node_modules\bootstrap\less\" />
     <Folder Include="node_modules\bootstrap\less\mixins\" />
-    <Folder Include="partials\" />
+    <Folder Include="views\partials\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\js\" />
