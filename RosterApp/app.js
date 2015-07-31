@@ -6,11 +6,15 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes');
+var queryDB = require('./services/queryDB.js');
 
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', [
+  path.join(__dirname, 'views'),
+  path.join(__dirname, 'query')
+]);
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
@@ -26,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'node_modules')));
 
 app.get('/', routes.index);
 app.get('/partials/:name', routes.partials);
+app.get('/query/:name', routes.query);
 app.get('*', routes.index);
 
 // catch 404 and forward to error handler

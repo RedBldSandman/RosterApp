@@ -64,9 +64,11 @@
     <Compile Include="node_modules\bootstrap\js\tooltip.js" />
     <Compile Include="node_modules\bootstrap\js\transition.js" />
     <Compile Include="node_modules\bootstrap\LICENSE" />
+    <Compile Include="query\getSpeakers.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="bin\www" />
     <Compile Include="public\js\titleCtrl.js" />
+    <Compile Include="services\queryDB.js" />
     <Content Include="node_modules\angular-resource\angular-resource.min.js.map" />
     <Content Include="node_modules\angular-resource\bower.json" />
     <Content Include="node_modules\angular-resource\package.json" />
@@ -177,11 +179,13 @@
     <Content Include="views\partials\home.html" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
-    <Content Include="views\error.html" />
+    <Content Include="views\partials\error.html" />
     <Content Include="views\index.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
+    <Folder Include="query\" />
+    <Folder Include="services\" />
     <Folder Include="node_modules\" />
     <Folder Include="node_modules\angular-resource\" />
     <Folder Include="node_modules\angular-route\" />
